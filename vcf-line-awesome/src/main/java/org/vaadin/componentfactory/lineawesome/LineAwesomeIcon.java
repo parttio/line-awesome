@@ -1,4 +1,4 @@
-package org.vaadin.addons.mygroup;
+package org.vaadin.componentfactory.lineawesome;
 
 import java.util.Locale;
 
@@ -1568,7 +1568,9 @@ public enum LineAwesomeIcon {
     public Component create() {
         Image image = new Image();
         image.setSrc("line-awesome/svg/" + getId() + ".svg");
-        image.setHeight("1em");
+        image.setWidth("var(--lumo-icon-size-m)");
+        image.setHeight("var(--lumo-icon-size-m)");
+        image.getStyle().set("vertical-align", "middle");
         return image;
     }
 }
