@@ -1,4 +1,4 @@
-package org.vaadin.componentfactory.lineawesome;
+package org.vaadin.lineawesome;
 
 import java.util.Locale;
 

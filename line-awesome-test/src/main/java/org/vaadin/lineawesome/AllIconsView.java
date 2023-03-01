@@ -1,8 +1,6 @@
-package org.vaadin.addons.componentfactory;
+package org.vaadin.lineawesome;
 
 import java.util.Locale;
-
-import org.vaadin.componentfactory.lineawesome.LineAwesomeIcon;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.grid.Grid;

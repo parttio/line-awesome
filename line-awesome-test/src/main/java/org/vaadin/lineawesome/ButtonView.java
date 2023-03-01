@@ -1,6 +1,4 @@
-package org.vaadin.addons.componentfactory;
-
-import org.vaadin.componentfactory.lineawesome.LineAwesomeIcon;
+package org.vaadin.lineawesome;
 
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.icon.VaadinIcon;

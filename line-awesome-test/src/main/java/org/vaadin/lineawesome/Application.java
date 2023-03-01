@@ -1,4 +1,4 @@
-package org.vaadin.addons.componentfactory;
+package org.vaadin.lineawesome;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

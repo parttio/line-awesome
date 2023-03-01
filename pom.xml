@@ -4,11 +4,11 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.vaadin.addons.componentfactory</groupId>
-    <artifactId>vcf-line-awesome-parent</artifactId>
+    <groupId>org.parttio</groupId>
+    <artifactId>line-awesome-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Line Awesome icons for Vaadin Parent</name>
-    <description>Line Awesome icons for Vaadin Parent</description>
+    <name>Line Awesome icons for Vaadin (Parent)</name>
+    <description>Line Awesome icons for Vaadin (Parent)</description>
     <packaging>pom</packaging>
 
     <properties>
@@ -19,8 +19,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
     <organization>
-        <name>Vaadin Ltd</name>
-        <url>https://vaadin.com/</url>
+        <name>Artur Signell</name>
     </organization>
     <licenses>
         <license>
@@ -96,7 +95,7 @@
     </build>
 
     <modules>
-        <module>vcf-line-awesome</module>
-        <module>vcf-line-awesome-test</module>
+        <module>line-awesome</module>
+        <module>line-awesome-test</module>
     </modules>
 </project>
