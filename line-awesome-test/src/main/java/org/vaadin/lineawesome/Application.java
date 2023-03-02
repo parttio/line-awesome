@@ -14,7 +14,7 @@ import com.vaadin.flow.theme.Theme;
  *
  */
 @SpringBootApplication
-@Theme(value = "vcf-line-awesome-test")
+@Theme(value = "line-awesome-test")
 public class Application implements AppShellConfigurator {
 
     public static void main(String[] args) {
