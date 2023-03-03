@@ -15,5 +15,8 @@ public class ButtonView extends VerticalLayout {
         Button ok2 = new Button("OK");
         ok2.setIcon(VaadinIcon.CHECK_SQUARE.create());
         add(ok2);
+        Button button = new Button("Pay");
+        button.setIcon(LineAwesomeIcon.CREDIT_CARD.create());
+        add(button);
     }
 }
