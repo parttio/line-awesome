@@ -7,7 +7,7 @@
     <groupId>org.parttio</groupId>
     <artifactId>line-awesome-test</artifactId>
     <name>line-awesome-test</name>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
