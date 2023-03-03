@@ -4,6 +4,8 @@ import java.util.Locale;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.html.Image;
+import com.vaadin.flow.component.html.Span;
+import com.vaadin.flow.dom.Style;
 
 public enum LineAwesomeIcon {
     _500PX("500px"),
@@ -1566,11 +1568,30 @@ public enum LineAwesomeIcon {
     }
 
     public Component create() {
-        Image image = new Image();
-        image.setSrc("line-awesome/svg/" + getId() + ".svg");
-        image.setWidth("var(--lumo-icon-size-m)");
-        image.setHeight("var(--lumo-icon-size-m)");
-        image.getStyle().set("vertical-align", "middle");
-        return image;
+        Span span = new Span();
+        String src = "line-awesome/svg/" + getId() + ".svg";
+
+        Style style = span.getStyle();
+        style.set("--mask-image", "url('" + src + "')");
+
+        // All below should go into a CSS file
+        style.set("--mask-repeat", "no-repeat");
+        style.set("--mask-position", "50%");
+        style.set("--_size", "var(--lumo-icon-size-m)");
+
+        // style.set("vertical-align", "middle");
+        style.set("mask-image", "var(--mask-image)");
+        style.set("mask-repeat", "var(--mask-repeat)");
+        style.set("mask-position", "var(--mask-position)");
+
+        style.set("width", "var(--_size)");
+        style.set("height", "var(--_size)");
+        style.set("background-color", "currentColor");
+
+        // This is for Chrome...
+        style.set("-webkit-mask-image", "var(--mask-image)");
+        style.set("-webkit-mask-repeat", "var(--mask-repeat)");
+        style.set("-webkit-mask-position", "var(--mask-position)");
+        return span;
     }
 }
