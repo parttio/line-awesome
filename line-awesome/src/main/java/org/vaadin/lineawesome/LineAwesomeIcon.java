@@ -1584,6 +1584,7 @@ public enum LineAwesomeIcon {
         // All below should go into a CSS file
         style.set("--mask-repeat", "no-repeat");
         style.set("--mask-position", "50%");
+        style.set("vertical-align", "middle");
         style.set("--_size", "var(--lumo-icon-size-m)");
 
         style.set("mask-image", "var(--mask-image)");
