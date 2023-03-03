@@ -3,10 +3,12 @@ package org.vaadin.lineawesome;
 import java.util.Locale;
 
 import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.dom.Style;
 
+/**
+ * An integration of the https://icons8.com/line-awesome icon set.
+ */
 public enum LineAwesomeIcon {
     _500PX("500px"),
     ACCESSIBLE_ICON,
@@ -1551,7 +1553,7 @@ public enum LineAwesomeIcon {
     YOAST,
     YOUTUBE_SQUARE,
     YOUTUBE,
-    ZHIHU,;
+    ZHIHU;
 
     private String id;
 
@@ -1563,10 +1565,15 @@ public enum LineAwesomeIcon {
         this.id = id;
     }
 
-    public String getId() {
+    private String getId() {
         return id;
     }
 
+    /**
+     * Creates an icon instance.
+     * 
+     * @return the icon as a component
+     */
     public Component create() {
         Span span = new Span();
         String src = "line-awesome/svg/" + getId() + ".svg";
@@ -1579,7 +1586,6 @@ public enum LineAwesomeIcon {
         style.set("--mask-position", "50%");
         style.set("--_size", "var(--lumo-icon-size-m)");
 
-        // style.set("vertical-align", "middle");
         style.set("mask-image", "var(--mask-image)");
         style.set("mask-repeat", "var(--mask-repeat)");
         style.set("mask-position", "var(--mask-position)");
@@ -1595,6 +1601,7 @@ public enum LineAwesomeIcon {
         style.set("-webkit-mask-image", "var(--mask-image)");
         style.set("-webkit-mask-repeat", "var(--mask-repeat)");
         style.set("-webkit-mask-position", "var(--mask-position)");
+
         return span;
     }
 }
