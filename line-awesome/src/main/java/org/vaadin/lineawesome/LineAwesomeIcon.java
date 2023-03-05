@@ -1555,18 +1555,23 @@ public enum LineAwesomeIcon {
     YOUTUBE,
     ZHIHU;
 
-    private String id;
+    private String svgName;
 
     private LineAwesomeIcon() {
-        this.id = name().toLowerCase(Locale.ENGLISH).replace("_", "-");
+        this.svgName = name().toLowerCase(Locale.ENGLISH).replace("_", "-");
     }
 
-    private LineAwesomeIcon(String id) {
-        this.id = id;
+    private LineAwesomeIcon(String svgName) {
+        this.svgName = svgName;
     }
 
-    private String getId() {
-        return id;
+    /**
+     * Returns the name of the icon svg.
+     * 
+     * @return the name of the svg, without the ".svg" extension
+     */
+    public String getSvgName() {
+        return svgName;
     }
 
     /**
@@ -1576,7 +1581,7 @@ public enum LineAwesomeIcon {
      */
     public Component create() {
         Span span = new Span();
-        String src = "line-awesome/svg/" + getId() + ".svg";
+        String src = "line-awesome/svg/" + getSvgName() + ".svg";
 
         Style style = span.getStyle();
         style.set("--mask-image", "url('" + src + "')");
