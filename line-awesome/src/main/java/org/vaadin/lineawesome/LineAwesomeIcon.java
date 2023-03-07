@@ -1599,7 +1599,6 @@ public enum LineAwesomeIcon {
         style.set("width", "var(--_size)");
         style.set("height", "var(--_size)");
         style.set("background-color", "currentColor");
-        style.set("color", "inherit");
         style.set("display", "inline-block");
         style.set("flex", "none");
 
