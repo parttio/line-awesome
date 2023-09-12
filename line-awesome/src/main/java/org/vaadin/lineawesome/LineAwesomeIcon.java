@@ -2,7 +2,6 @@ package org.vaadin.lineawesome;
 
 import java.util.Locale;
 
-import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.icon.SvgIcon;
 
 /**
@@ -1576,9 +1575,9 @@ public enum LineAwesomeIcon {
     /**
      * Creates an icon instance.
      * 
-     * @return the icon as a component
+     * @return the icon
      */
-    public Component create() {
+    public SvgIcon create() {
         return new SvgIcon("line-awesome/svg/" + getSvgName() + ".svg");
     }
 }
