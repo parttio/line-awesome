@@ -13,4 +13,14 @@ public class LineAwesomeIconTest {
         }
 
     }
+
+    @Test
+    public void hasIconAPIs() {
+        var icon = LineAwesomeIcon.CALENDAR.create();
+        icon.setSize("100px");
+        icon.setColor("red");
+        Assertions.assertEquals("red", icon.getColor());
+        Assertions.assertEquals("100px", icon.getStyle().get("width"));
+        Assertions.assertEquals("100px", icon.getStyle().get("height"));
+    }
 }

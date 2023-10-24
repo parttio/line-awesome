@@ -10,7 +10,7 @@
     <url>https://github.com/parttio/line-awesome</url>
 
     <properties>
-        <vaadin.version>23.3.6</vaadin.version>
+        <vaadin.version>24.2.0</vaadin.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

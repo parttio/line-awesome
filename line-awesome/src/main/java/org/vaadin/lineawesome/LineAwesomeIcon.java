@@ -2,9 +2,7 @@ package org.vaadin.lineawesome;
 
 import java.util.Locale;
 
-import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.html.Span;
-import com.vaadin.flow.dom.Style;
+import com.vaadin.flow.component.icon.SvgIcon;
 
 /**
  * An integration of the https://icons8.com/line-awesome icon set.
@@ -1577,36 +1575,9 @@ public enum LineAwesomeIcon {
     /**
      * Creates an icon instance.
      * 
-     * @return the icon as a component
+     * @return the icon
      */
-    public Component create() {
-        Span span = new Span();
-        String src = "line-awesome/svg/" + getSvgName() + ".svg";
-
-        Style style = span.getStyle();
-        style.set("--mask-image", "url('" + src + "')");
-
-        // All below should go into a CSS file
-        style.set("--mask-repeat", "no-repeat");
-        style.set("--mask-position", "50%");
-        style.set("vertical-align", "middle");
-        style.set("--_size", "var(--lumo-icon-size-m)");
-
-        style.set("mask-image", "var(--mask-image)");
-        style.set("mask-repeat", "var(--mask-repeat)");
-        style.set("mask-position", "var(--mask-position)");
-
-        style.set("width", "var(--_size)");
-        style.set("height", "var(--_size)");
-        style.set("background-color", "currentColor");
-        style.set("display", "inline-block");
-        style.set("flex", "none");
-
-        // This is for Chrome...
-        style.set("-webkit-mask-image", "var(--mask-image)");
-        style.set("-webkit-mask-repeat", "var(--mask-repeat)");
-        style.set("-webkit-mask-position", "var(--mask-position)");
-
-        return span;
+    public SvgIcon create() {
+        return new SvgIcon("line-awesome/svg/" + getSvgName() + ".svg");
     }
 }
