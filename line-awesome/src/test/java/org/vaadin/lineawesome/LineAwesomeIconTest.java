@@ -9,7 +9,8 @@ public class LineAwesomeIconTest {
     public void allSvgsExist() {
         for (LineAwesomeIcon icon : LineAwesomeIcon.values()) {
             Assertions.assertNotNull(getClass().getClassLoader()
-                    .getResource("META-INF/resources/line-awesome/svg/" + icon.getSvgName() + ".svg"), "Svg "+icon.getSvgName()+" should exist");
+                    .getResource("META-INF/resources/line-awesome/svg/" + icon.getSvgName() + ".svg"),
+                    "Svg " + icon.getSvgName() + " should exist");
         }
 
     }
@@ -23,4 +24,13 @@ public class LineAwesomeIconTest {
         Assertions.assertEquals("100px", icon.getStyle().get("width"));
         Assertions.assertEquals("100px", icon.getStyle().get("height"));
     }
+
+    @Test
+    public void svgPathIsCorrect() {
+        for (LineAwesomeIcon icon : LineAwesomeIcon.values()) {
+            Assertions.assertEquals(icon.getSource(), "line-awesome/svg/" + icon.getSvgName() + ".svg");
+        }
+
+    }
+
 }
