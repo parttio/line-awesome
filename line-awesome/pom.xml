@@ -4,7 +4,7 @@
 
     <groupId>org.parttio</groupId>
     <artifactId>line-awesome</artifactId>
-    <version>2.1.0</version>
+    <version>2.1.1-SNAPSHOT</version>
     <name>Line Awesome icons for Vaadin</name>
     <description>Line Awesome icons for Vaadin</description>
     <url>https://github.com/parttio/line-awesome</url>
@@ -37,7 +37,7 @@
         <url>https://github.com/parttio/line-awesome</url>
         <connection>scm:git:git://github.com/parttio/line-awesome.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:/parttio/line-awesome.git</developerConnection>
-        <tag>line-awesome-2.1.0</tag>
+        <tag>line-awesome-1.1.0</tag>
     </scm>
 
     <distributionManagement>
